@@ -10,8 +10,8 @@ const ChatFeed = (props) => {
       const keys = Object.keys(messages);
       return keys.map((key, index) => {
         const message = messages[key];
-        const lastMesageKey = index === 0 ? null : keys[index - 1];
-        const isMyMessage = username === message.sender.username;
+        const lastMessageKey = index === 0 ? null : keys[index - 1];
+        const isMyMessage = userName === message.sender.username;
 
         return (
             <div key={`msg_$[index]`} style={{ width: '100%' }}>

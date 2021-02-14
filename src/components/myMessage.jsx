@@ -12,7 +12,7 @@ const MyMessage = ({ message }) => {
         )
     }
     return (
-        <div>
+        <div className='message' style={{ marginRight: '18px', color: 'white'}}>
            my message 
         </div>
     )
